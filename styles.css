@@ -6,6 +6,7 @@
     --Very-pale_blue: hsl(225, 100%, 98%);
     --Desaturated_blue: hsl(224, 23%, 55%);
     --Dark_blue: hsl(223, 47%, 23%);
+    --hover: hsl(244, 79%, 69%);
 }
 
 * {
@@ -18,4 +19,105 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: var(--Pale_blue);
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
 }
+
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--Desaturated_blue);
+    border-radius: 20px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.title {
+    color: var(--Dark_blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.container > * {
+    margin: 13px 0;
+}
+
+.container strong {
+    color: var(--Dark_blue);
+}
+
+.order-description {
+    line-height: 25px;
+}
+
+.plain-container {
+    font-size: 16px;
+    background-color: var(--Very-pale_blue);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plain-container a {
+    color: var(--Bright_blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plain-container a:hover {
+    color: var(--hover);
+    text-decoration: none;
+}
+
+.plain-description {
+    margin-right: 75px;
+    line-height: 20px;
+}
+
+button {
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.proceed-button {
+    background-color: var(--Bright_blue);
+    color: white;
+    padding: 1rem 0;
+
+}
+
+.proceed-button:hover {
+    background-color: var(--hover);
+}
+
+.cancel-button {
+    background-color: white;
+    color: var(--Desaturated_blue);
+    border: none;
+    margin-top: 22px;
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
