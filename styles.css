@@ -121,3 +121,18 @@ button {
     color: black;
 }
 
+@media screen and (max-width: 375px) {
+    .card {
+        width: 350px;
+        /* padding: 10px 5px; */
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .plain-description {
+        margin-right: 25px;
+    }
+}
+
